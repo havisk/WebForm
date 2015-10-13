@@ -8,17 +8,26 @@
 </head>
 
 <body>
+<div id="formWrapper">
 
-  <h1 id="title">Sign Up For My Web App</h2>
-  <div id="registrationForm">
-   
-
-  <form class="genericForm"></form>
-
+  <div id="titleWrapper">
+    <h2 id="title">Sign Up For My Web App</h2>
   </div>
-<footer id="footer">
+
+  <div id="registrationForm"> 
+
+  <form class="genericForm">
+   </form>
+  </div>
+    
+    <footer id="footer">
   <button id="submit" type="submit" value="submit">Submit Form</button>
 </footer>
+</div> <!-- end of form wrapper -->
+ 
+  
+
+
 
 <script type="text/template" id="generic-form">
 	<div class="text-input form-elem">
@@ -26,6 +35,8 @@
 		<i class="fa <%= obj.icon %>"></i>
 	</div>
 </script>
+
+
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
