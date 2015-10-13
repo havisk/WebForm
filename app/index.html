@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SAMPLE PROJECT</title>
+  <title>Registration Form</title>
   <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
 
-  <h1>Hello World</h1>
+<body>
+<header>
+	<h2>Sign Up For My Web App</h2>
+</header>
+  <div id="registrationForm">
+
+  
+
+  <form class="genericForm"></form>
+
+
+
+<script type="text/template" id="generic-form">
+	<div class="text-inout form-elem">
+		<input value="" type="<%= obj.type %>" placeholder="<%= obj.label %>" id="<%= obj.id %>">
+		<i class="fa <%= obj.icon %>"></i>
+	</div>
+</script>
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
