@@ -13,6 +13,8 @@
 
 	//template
 	var genericInput = _.template($('#generic-form').text());
+	var select = _.template($('#generic-form').text());
+	var textarea = _.template($('#generic-form').text());
 
 	// our do something
 	var fetch = function fetch(arr) {
@@ -23,7 +25,12 @@
 			if (item.type === 'text' || item.type === 'tel' || item.type === 'email') {
 				htmlBlock = genericInput(item);
 			}
-
+			// else if (item.type === 'select') {
+			//   htmlBlock = select;
+			// }
+			// else if (item.type === 'textarea') {
+			//   htmlBlock = textarea;
+			// }
 			$('form').append(htmlBlock);
 		});
 

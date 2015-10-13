@@ -13,7 +13,8 @@ fetch(data);
 
 //template
 let genericInput = _.template($('#generic-form').text());
-
+let select = _.template($('#generic-form').text());
+let textarea = _.template($('#generic-form').text());
 
 
 // our do something
@@ -26,7 +27,12 @@ if (item.type === 'text'|| item.type === 'tel' || item.type ==='email')
 {
 	htmlBlock = genericInput(item);
 }
-
+// else if (item.type === 'select') {
+//   htmlBlock = select;
+// }
+// else if (item.type === 'textarea') {
+//   htmlBlock = textarea;
+// }
 $('form').append(htmlBlock)
 
 });
