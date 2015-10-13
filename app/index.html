@@ -8,19 +8,20 @@
 </head>
 
 <body>
-<header>
-	<h2>Sign Up For My Web App</h2>
-</header>
-  <div id="registrationForm">
 
-  
+  <h1 id="title">Sign Up For My Web App</h2>
+  <div id="registrationForm">
+   
 
   <form class="genericForm"></form>
 
-
+  </div>
+<footer id="footer">
+  <button id="submit" type="submit" value="submit">Submit Form</button>
+</footer>
 
 <script type="text/template" id="generic-form">
-	<div class="text-inout form-elem">
+	<div class="text-input form-elem">
 		<input value="" type="<%= obj.type %>" placeholder="<%= obj.label %>" id="<%= obj.id %>">
 		<i class="fa <%= obj.icon %>"></i>
 	</div>
