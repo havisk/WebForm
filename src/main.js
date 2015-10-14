@@ -13,7 +13,6 @@ fetch(data);
 
 //template
 let genericInput = _.template($('#generic-form').text());
-let select = _.template($('#generic-form').text());
 
 
 // our do something
@@ -33,8 +32,6 @@ else if(item.type === 'textarea')
 
 $('form').append(htmlBlock)
 
-
-var htmlBlock2 ="";
 
 // if (item.type === 'select')
 // {

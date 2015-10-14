@@ -13,12 +13,6 @@
 
 	//template
 	var genericInput = _.template($('#generic-form').text());
-<<<<<<< HEAD
-	// let genericSelect = _.template($('#generic-car').text());
-=======
-	var select = _.template($('#generic-form').text());
-	var textarea = _.template($('#generic-form').text());
->>>>>>> 1490bf4c58bdd9f2299fcf0fb458a69ad6a6a1ad
 
 	// our do something
 	var fetch = function fetch(arr) {
@@ -31,15 +25,8 @@
 			} else if (item.type === 'textarea') {
 				htmlBlock = genericInput(item);
 			}
-			// else if (item.type === 'select') {
-			//   htmlBlock = select;
-			// }
-			// else if (item.type === 'textarea') {
-			//   htmlBlock = textarea;
-			// }
-			$('form').append(htmlBlock);
 
-			var htmlBlock2 = "";
+			$('form').append(htmlBlock);
 
 			// if (item.type === 'select')
 			// {
