@@ -13,6 +13,7 @@
 
 	//template
 	var genericInput = _.template($('#generic-form').text());
+	// let genericSelect = _.template($('#generic-car').text());
 
 	// our do something
 	var fetch = function fetch(arr) {
@@ -22,9 +23,25 @@
 
 			if (item.type === 'text' || item.type === 'tel' || item.type === 'email') {
 				htmlBlock = genericInput(item);
+			} else if (item.type === 'textarea') {
+				htmlBlock = genericInput(item);
 			}
 
 			$('form').append(htmlBlock);
+
+			var htmlBlock2 = "";
+
+			// if (item.type === 'select')
+			// {
+			// 	 var opt = document.createElement("option");
+			//    opt.value= index;
+			//    opt.innerHTML = element;
+			// }
+			// 		htmlBlock2 = genericSelect(item);
+			// 		htmlBlock2.appendChild(select);
+			//    	index++;
+
+			//   $('form').append(htmlBlock2)
 		});
 
 		// <div class="text-input for-elem">
